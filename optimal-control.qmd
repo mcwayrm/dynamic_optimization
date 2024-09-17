@@ -1,13 +1,21 @@
-# Optimal Control
+---
+title: "Optimal Control"
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    css: styles.css
+---
 
-## Current Value Hamiltonian
+# Current Value Hamiltonian
 
-```{python}
+<!-- ```{python}
 
-```
+``` -->
 
-## Phase Diagram
+# Phase Diagram
 
-```{python}
+<!-- ```{python}
 
-```
+``` -->
+
