@@ -7,10 +7,94 @@ format:
     css: styles.css
 ---
 
-# Current Value Hamiltonian
+# Solving Differential Equation System
+
+A step-by-step approach to analyzing systems of differential equations
+Here are steps that I use to analyze the dynamics of a system of two differential equations.
+There are a variety of approaches to drawing phase diagrams. I find these steps to be quite
+intuitive and they help me avoid careless mistakes.
+
+1. Find a reduced form for the expressions 1 2andx xɺ ɺ in terms of only 1 2,x x and
+exogenous parameters. All other variables must be eliminated from the equations or
+assumed to be constant.
 
 ```{python}
+print("TODO:")
+```
 
+2. Solve for the inequalities 0and0 21 ≥≥ xx ɺɺ . This should leave you with two
+inequalities in terms of x1 and x2 that, if satisfied, mean that 0and0 21 ≥≥ xx ɺɺ .
+
+```{python}
+print("TODO:")
+```
+
+3. Find the equilibria: the values of x1 and x2 such that 1 2 0x x= =ɺ ɺ .
+
+```{python}
+print("TODO:")
+```
+
+4. Graph the isoclines, i.e., the functions 0and0 21 == xx ɺɺ in the (x1, x2) plane.
+
+```{python}
+print("TODO:")
+```
+
+5. Using the inequalities found in 2, determine the trajectories for x1 and x2 on either side
+of the isoclines. That is, on which side of the isoclines is each variable is increasing
+( 1 20 and 0x x> >ɺ ɺ ) and where are they decreasing ( 1 20 and 0x x< <ɺ ɺ ).
+Hint: it is easiest if you carry out steps 4 and 5 separately for each isocline first before
+putting the two together.
+
+```{python}
+print("TODO:")
+```
+
+6. Take a linear approximation of the system’s dynamics in the neighborhood of each
+equilibrium and express it as a matrix of the form ⋅ =x Ax .
+
+```{python}
+print("TODO:")
+```
+
+7. Check to see if the easy conditions from L&VL (ii & iii above) are satisfied. Then, if
+necessary, find the Eigen values of this linear system of equations and, following
+Léonard and Van Long p. 986, evaluate the system’s stability.
+
+# Current Value Hamiltonian
+
+How do I get the FOC and the equilbirum states using python if we give it a present value Hamiltonian
+
+
+```{python}
+import sympy as sp
+
+# Define the variables and parameters
+X, h, lambd = sp.symbols('X h lambda')
+c, d = sp.symbols('c d')
+
+# Define the utility function U(X, h) (arbitrary example)
+U = sp.log(X) + h**4  # Example utility function
+constraint = (c * X - d * X**2 - h)
+# Define the Hamiltonian function H
+H = U + lambd * constraint
+
+# First-order condition w.r.t h
+FOC_h = sp.diff(H, h)
+FOC_h_solved = sp.solve(FOC_h, h)  # Solve FOC for h
+
+# First-order condition w.r.t X
+FOC_X = sp.diff(H, X)
+
+# First-order condition w.r.t lambda (gives the state equation)
+FOC_lambda = sp.diff(H, lambd)
+
+# Display the results
+print("Hamiltonian:", H)
+print("FOC w.r.t h (∂H/∂h = 0):", FOC_h, "=>", FOC_h_solved)
+print("FOC w.r.t X (∂H/∂X = -λ_dot):", FOC_X)
+print("FOC w.r.t lambda (∂H/∂λ = X_dot):", FOC_lambda)
 ```
 
 # Phase Diagram
@@ -26,6 +110,7 @@ b = 1
 c = 0.5
 d = 0.002
 r = 0.1
+start = 120
 
 # Define the differential equation system
 # X_dot = c*X - d*X^2 - h
@@ -47,7 +132,7 @@ plt.plot(y1, xisocline, 'k', label=r'$\dot{X} = 0$ Isocline', linewidth=2)
 
 # Plotting multiple trajectories
 for y20 in range(0, 41, 2):
-    sol = solve_ivp(system, [1, 8], [120, y20], t_eval=np.linspace(1, 8, 300))
+    sol = solve_ivp(system, [1, 8], [start, y20], t_eval=np.linspace(1, 8, 300))
     plt.plot(sol.y[0], sol.y[1], label=f'y2_0={y20}', linewidth=2)
 
 # Plot the vertical isocline line

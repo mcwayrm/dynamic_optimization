@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -46,7 +80,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#current-value-hamiltonian" id="toc-current-value-hamiltonian" class="nav-link active" data-scroll-target="#current-value-hamiltonian">Current Value Hamiltonian</a></li>
+  <li><a href="#solving-differential-equation-system" id="toc-solving-differential-equation-system" class="nav-link active" data-scroll-target="#solving-differential-equation-system">Solving Differential Equation System</a></li>
+  <li><a href="#current-value-hamiltonian" id="toc-current-value-hamiltonian" class="nav-link" data-scroll-target="#current-value-hamiltonian">Current Value Hamiltonian</a></li>
   <li><a href="#phase-diagram" id="toc-phase-diagram" class="nav-link" data-scroll-target="#phase-diagram">Phase Diagram</a></li>
   </ul>
 </nav>
@@ -70,17 +105,159 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="solving-differential-equation-system" class="level1">
+<h1>Solving Differential Equation System</h1>
+<p>A step-by-step approach to analyzing systems of differential equations Here are steps that I use to analyze the dynamics of a system of two differential equations. There are a variety of approaches to drawing phase diagrams. I find these steps to be quite intuitive and they help me avoid careless mistakes.</p>
+<ol type="1">
+<li>Find a reduced form for the expressions 1 2andx xɺ ɺ in terms of only 1 2,x x and exogenous parameters. All other variables must be eliminated from the equations or assumed to be constant.</li>
+</ol>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"TODO:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>TODO:</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Solve for the inequalities 0and0 21 ≥≥ xx ɺɺ . This should leave you with two inequalities in terms of x1 and x2 that, if satisfied, mean that 0and0 21 ≥≥ xx ɺɺ .</li>
+</ol>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"TODO:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>TODO:</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Find the equilibria: the values of x1 and x2 such that 1 2 0x x= =ɺ ɺ .</li>
+</ol>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"TODO:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>TODO:</code></pre>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Graph the isoclines, i.e., the functions 0and0 21 == xx ɺɺ in the (x1, x2) plane.</li>
+</ol>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"TODO:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>TODO:</code></pre>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Using the inequalities found in 2, determine the trajectories for x1 and x2 on either side of the isoclines. That is, on which side of the isoclines is each variable is increasing ( 1 20 and 0x x&gt; &gt;ɺ ɺ ) and where are they decreasing ( 1 20 and 0x x&lt; &lt;ɺ ɺ ). Hint: it is easiest if you carry out steps 4 and 5 separately for each isocline first before putting the two together.</li>
+</ol>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"TODO:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>TODO:</code></pre>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Take a linear approximation of the system’s dynamics in the neighborhood of each equilibrium and express it as a matrix of the form ⋅ =x Ax .</li>
+</ol>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"TODO:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>TODO:</code></pre>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Check to see if the easy conditions from L&amp;VL (ii &amp; iii above) are satisfied. Then, if necessary, find the Eigen values of this linear system of equations and, following Léonard and Van Long p.&nbsp;986, evaluate the system’s stability.</li>
+</ol>
+</section>
 <section id="current-value-hamiltonian" class="level1">
 <h1>Current Value Hamiltonian</h1>
-<!-- ```{python}
-
-``` -->
+<p>How do I get the FOC and the equilbirum states using python if we give it a present value Hamiltonian</p>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy <span class="im">as</span> sp</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the variables and parameters</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>X, h, lambd <span class="op">=</span> sp.symbols(<span class="st">'X h lambda'</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>c, d <span class="op">=</span> sp.symbols(<span class="st">'c d'</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the utility function U(X, h) (arbitrary example)</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>U <span class="op">=</span> sp.log(X) <span class="op">+</span> h<span class="op">**</span><span class="dv">4</span>  <span class="co"># Example utility function</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>constraint <span class="op">=</span> (c <span class="op">*</span> X <span class="op">-</span> d <span class="op">*</span> X<span class="op">**</span><span class="dv">2</span> <span class="op">-</span> h)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the Hamiltonian function H</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>H <span class="op">=</span> U <span class="op">+</span> lambd <span class="op">*</span> constraint</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="co"># First-order condition w.r.t h</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>FOC_h <span class="op">=</span> sp.diff(H, h)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>FOC_h_solved <span class="op">=</span> sp.solve(FOC_h, h)  <span class="co"># Solve FOC for h</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="co"># First-order condition w.r.t X</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>FOC_X <span class="op">=</span> sp.diff(H, X)</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="co"># First-order condition w.r.t lambda (gives the state equation)</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>FOC_lambda <span class="op">=</span> sp.diff(H, lambd)</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the results</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hamiltonian:"</span>, H)</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"FOC w.r.t h (∂H/∂h = 0):"</span>, FOC_h, <span class="st">"=&gt;"</span>, FOC_h_solved)</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"FOC w.r.t X (∂H/∂X = -λ_dot):"</span>, FOC_X)</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"FOC w.r.t lambda (∂H/∂λ = X_dot):"</span>, FOC_lambda)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Hamiltonian: h**4 + lambda*(-X**2*d + X*c - h) + log(X)
+FOC w.r.t h (∂H/∂h = 0): 4*h**3 - lambda =&gt; [2**(1/3)*lambda**(1/3)/2, -2**(1/3)*lambda**(1/3)/4 - 2**(1/3)*sqrt(3)*I*lambda**(1/3)/4, -2**(1/3)*lambda**(1/3)/4 + 2**(1/3)*sqrt(3)*I*lambda**(1/3)/4]
+FOC w.r.t X (∂H/∂X = -λ_dot): lambda*(-2*X*d + c) + 1/X
+FOC w.r.t lambda (∂H/∂λ = X_dot): -X**2*d + X*c - h</code></pre>
+</div>
+</div>
 </section>
 <section id="phase-diagram" class="level1">
 <h1>Phase Diagram</h1>
-<!-- ```{python}
-
-``` -->
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.integrate <span class="im">import</span> solve_ivp</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameter values</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">20</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> <span class="fl">0.002</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="fl">0.1</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>start <span class="op">=</span> <span class="dv">120</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the differential equation system</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co"># X_dot = c*X - d*X^2 - h</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co"># h_dot = -h * (r - c + 2*d*X)</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> system(t, y):</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>        c <span class="op">*</span> y[<span class="dv">0</span>] <span class="op">-</span> d <span class="op">*</span> y[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">-</span> y[<span class="dv">1</span>],  <span class="co"># dX/dt</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>        <span class="op">-</span>y[<span class="dv">1</span>] <span class="op">*</span> (r <span class="op">-</span> c <span class="op">+</span> <span class="dv">2</span> <span class="op">*</span> d <span class="op">*</span> y[<span class="dv">0</span>])  <span class="co"># dh/dt</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the X_dot = 0 isocline</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>y1 <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">251</span>, <span class="dv">1</span>)</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>xisocline <span class="op">=</span> c <span class="op">*</span> y1 <span class="op">-</span> d <span class="op">*</span> y1<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Graph trajectories and isoclines on the same figure</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>plt.plot(y1, xisocline, <span class="st">'k'</span>, label<span class="op">=</span><span class="vs">r'$\dot</span><span class="sc">{X}</span><span class="vs"> = 0$ Isocline'</span>, linewidth<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting multiple trajectories</span></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> y20 <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">41</span>, <span class="dv">2</span>):</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>    sol <span class="op">=</span> solve_ivp(system, [<span class="dv">1</span>, <span class="dv">8</span>], [start, y20], t_eval<span class="op">=</span>np.linspace(<span class="dv">1</span>, <span class="dv">8</span>, <span class="dv">300</span>))</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>    plt.plot(sol.y[<span class="dv">0</span>], sol.y[<span class="dv">1</span>], label<span class="op">=</span><span class="ss">f'y2_0=</span><span class="sc">{</span>y20<span class="sc">}</span><span class="ss">'</span>, linewidth<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the vertical isocline line</span></span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>x_isocline <span class="op">=</span> (c <span class="op">-</span> r) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> d)</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>plt.axvline(x_isocline, linestyle<span class="op">=</span><span class="st">'-'</span>, linewidth<span class="op">=</span><span class="dv">2</span>, color<span class="op">=</span><span class="st">'k'</span>, label<span class="op">=</span><span class="vs">r'$h$ Isocline'</span>)</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Add labels and title</span></span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Stock (X)'</span>)</span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Harvest (h)'</span>)</span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Trajectories and Isoclines'</span>)</span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.legend()</span></span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="optimal-control_files/figure-html/cell-9-output-1.png" width="808" height="523"></p>
+</div>
+</div>
 </section>
 
 </main>
