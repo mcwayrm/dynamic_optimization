@@ -9,13 +9,13 @@ format:
 
 # Current Value Hamiltonian
 
-<!-- ```{python}
+```{python}
 
-``` -->
+```
 
 # Phase Diagram
 
-<!-- ```{python}
+```{python}
 
-``` -->
+```
 
