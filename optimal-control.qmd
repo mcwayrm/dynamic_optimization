@@ -1,0 +1,13 @@
+# Optimal Control
+
+## Current Value Hamiltonian
+
+```{python}
+
+```
+
+## Phase Diagram
+
+```{python}
+
+```
